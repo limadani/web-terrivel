@@ -1,0 +1,51 @@
+<!--_______________________________________________________
+Centro Federal de Educação Tecnológica de Minas Gerais
+Programação WEB: Terrivel
+Alunas: Daniele Lima, Daniela Lourenço
+_______________________________________________________-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Alimentador terrível</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+  <h1>Alimentador terrível</h1>
+  <form action="http://terrivel.herokuapp.com/monster/" method="POST">
+    <label>Número de pedras:
+      <input name="num_pedras"type="number" placeholder="Nº de pedras" min="0" value="&infin" required>
+    </label><br>
+    <label>Tamanho das pedras:
+      <input name="tam_pedras"type="float" value="3" min="1" max="7" required>
+    </label><br>
+    <label>Apelido do seu monstro:
+      <input name="nome" placeholder="Nome" pattern="[A-Za-zç]{0,}" required></input>
+    </label><br>
+    <label>Escolha 1ª cor para o céu :
+      <input name="corCeu1" type="color" value="#01B9FF" required></input>
+    </label><br>
+    <label>Escolha 2ª cor para o céu :
+      <input name="corCeu2" type="color" value="#B2EAFF" required></input>
+    </label><br>
+    <label>Selecione o tipo de pedra:
+      <select name="tipo_pedras" required>
+        <option value="">selecione</option>
+        <option value="marroada">Marroada</option>
+        <option value="ametista">Ametista</option>
+        <option value="topazio">Topazio</option>
+        <option value="espinela">Espinela</option>
+      </select>
+    </label><br>
+    <label>
+      Adicionar pedras sortidas? <input name="tipo_pedras_sortidas" type="radio"
+      value="sim" checked>Sim <input name="tipo_pedras_sortidas" type="radio"
+      value="nao">Não</input></label><br>
+      <button type="submit" formmethod="get">GET</button>
+      <button type="submit" formmethod="post">POST</button>
+      <button type="reset">Cancelar</button>
+  </form>
+
+</body>
+</html>

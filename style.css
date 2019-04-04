@@ -1,0 +1,34 @@
+/*
+_______________________________________________________
+Centro Federal de Educação Tecnológica de Minas Gerais
+Programação WEB: Terrivel
+Alunas: Daniele Lima, Daniela Lourenço
+_______________________________________________________
+/* Importa o arquivo CSS que importa as fonte Ravie e Trebuchet MS */
+@font-face {
+  font-family: 'Comic Marker Deluxe';
+  	src: url('font/Comic Marker Deluxe.ttf');
+}
+body{
+	font-family: 'Arial';
+}
+
+form{
+	border-style: solid;
+	border-color: #FA8072;
+	background-image: url("img/monster.jpg");
+	background-size: cover;
+	float: left;
+	padding: 40px;
+	display: table-cell;
+	width: 25%;
+	margin: auto;
+	text-align: justify;
+	line-height: 30px;
+}
+
+h1 {
+	font-family: 'Comic Marker Deluxe';
+  padding-left: 4.2%;
+	color: #FA8072;
+}
